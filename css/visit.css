@@ -1,0 +1,307 @@
+/********RESET*******/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*BASIC STYLE*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif; 
+     
+}
+
+body {
+	color: rgb(0, 0, 0);
+	
+	font-size: 15px;
+    line-height: 1.4;
+    height: 100%;
+}
+
+
+/*****HEADER******/
+
+body {
+    margin: 0;
+    
+    background-color: #f4f4f4;
+  }
+  
+  a {
+    color:black;
+  }
+  
+  /* header */
+  
+  .header {
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    
+    text-decoration: none;
+  }
+  
+
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background:black;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+    
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 70em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  
+
+
+/***MAIN***/
+
+.title {
+    padding-top: 200px;
+    margin-bottom: 50px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+
+} 
+
+h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+h3 {
+        font-size: 1.3em;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        
+}
+
+h4 {
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+strong {
+    text-decoration: underline;
+}
+   /**Footer**/
+
+.page-footer {
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.contactus {
+    width: 25%;
+    float: left;
+    display: block;
+    
+    
+}
+
+.hours {
+    width: 25%;
+    float: right;
+    display: block;
+    
+}
+
+
+
+.page-footer h3 {
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.page-footer h3::after {
+	content: '.';
+	font-size: 0;
+	width: 90%;
+	height: 1px;
+	background: #292929;
+	display: block;
+	margin: 15px;
+}
+
+.page-footer li {
+	font-size: 15px;
+	color: #999;
+	line-height: 1.6;
+}
+
+.page-footer li:hover {
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+}

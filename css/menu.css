@@ -1,0 +1,398 @@
+/********RESET*******/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*BASIC STYLE*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif; 
+     
+}
+
+body {
+	color: rgb(0, 0, 0);
+	
+	font-size: 15px;
+  line-height: 1.4;
+  
+}
+
+
+/*****HEADER******/
+
+body {
+    margin: 0;
+    
+    background-color: #f4f4f4;
+  }
+  
+  a {
+    color:black;
+  }
+  
+  /* header */
+  
+  .header {
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    
+    text-decoration: none;
+  }
+  
+
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background:black;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+    
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 70em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  
+
+/***Intro****/
+
+.textIntro {
+  text-align: center;
+}
+
+
+/***MAIN***/
+
+.menu-intro {
+  padding-top: 100px;
+}
+
+.food {
+    display: block;
+    margin: 0 auto;
+    max-width: 30%;
+  
+  /*margin: 0 auto;
+  max-width: 100%; */
+}
+
+.wines {
+  display: block;
+  margin: 0 auto;
+  max-width: 30%;
+  padding-bottom: 50px;
+}
+
+.textIntro {
+  padding-top: 25px;
+}
+
+.title {
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+
+} 
+
+h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+h3 {
+        font-size: 1.3em;
+        margin: 0;
+        padding: 0;
+        text-align: center;       
+}
+
+h4 {
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+    text-align: center;   
+}
+
+#food {
+  border: solid rgb(228, 24, 24) 2px;
+  margin-top: 200px;
+  margin-left: 100px;
+  padding: 0;
+  text-align: center;
+  padding: 5;
+  width: 500px;
+  height: 700px; 
+}
+
+
+/*for the Reservation Button*/
+.reservation {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.reservation a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: 2px solid black;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.reservation a:hover {
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+/*for the Wine & Cocktail Button*/
+.drink-list {
+  text-align: center;
+  margin-top: 75px;
+}
+.drink-list a {
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid black;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.drink-list a:hover {
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+   /**Footer**/
+
+.page-footer {
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.contactus {
+    width: 25%;
+    float: left;
+    display: block;
+    
+    
+}
+/** Maybe later Ill add this
+.restaurant-name {
+    font-family: 'Cormorant Garamond', serif;
+    float: left;
+    display: block;
+    margin-left: 130px;
+}
+*/
+
+
+.hours {
+    width: 25%;
+    float: right;
+    display: block;
+    
+}
+
+
+
+.page-footer h3 {
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.page-footer h3::after {
+	content: '.';
+	font-size: 0;
+	width: 90%;
+	height: 1px;
+	background: #292929;
+	display: block;
+	margin: 15px;
+}
+
+.page-footer li {
+	font-size: 15px;
+	color: #999;
+	line-height: 1.6;
+}
+
+.page-footer li:hover {
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+}
+
+
+
