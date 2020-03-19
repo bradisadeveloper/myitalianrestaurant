@@ -72,14 +72,15 @@ body {
   }
   
   a {
-    color:white;
+    color:black;
   }
   
   /* header */
   
   .header {
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    box-shadow: 1px 1px 4px 0 rgba(255,255,255,1);
     position: fixed;
+    background-color: white;
     width: 100%;
     z-index: 3;
     
@@ -253,13 +254,16 @@ body {
 
 
 
- /** #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  } **/
+/* #myVideo {
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+} */
 
   
   /***FOOTER***/
